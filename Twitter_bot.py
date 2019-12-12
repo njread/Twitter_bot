@@ -25,6 +25,6 @@ days_updated= []
 # Then play with your Github objects:
 while True:
 	for repo in g.get_user().get_repos():
-    	if d.date() == repo.updated_at.date():
-        	api.update_status(f'yes he did, he updated: {repo.name}')
-    time.sleep(INTERVAL)
+		if d.date() == repo.updated_at.date():
+			api.update_status(f'yes he did, he updated: {repo.name}')
+	time.sleep(INTERVAL)
