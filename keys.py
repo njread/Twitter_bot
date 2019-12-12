@@ -1,0 +1,6 @@
+ckey = 'Us8iwI1jbvu1PxD3NzidmUtdL'
+csecret = '7spfprquoGFJOMet2Itpcc4cb0MYlnIfa5l7ioXrKpUWrAzi3k'
+atoken = '1205189096454475776-Vk4CWyJEmnAxxHSAwVI6twT8hBieID'
+asecret = 'XtaZ890ocmxYlOdtOhnkrKpC3WUkDagxdp0FxuhLkXKIh'
+username = 'njread'
+password = '7pjq6v55x'
