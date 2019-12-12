@@ -10,15 +10,17 @@ CONSUMER_KEY = environ['CONSUMER_KEY']
 CONSUMER_SECRET = environ['CONSUMER_SECRET']
 ACCESS_KEY = environ['ACCESS_KEY']
 ACCESS_SECRET = environ['ACCESS_SECRET']
+username = environ['username']
+password = environ['password']
 INTERVAL = 60 * 60 * 6
 
-auth = OAuthHandler(ckey, csecret)
-auth.set_access_token(atoken, asecret)
+auth = OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
+auth.set_access_token(ACCESS_KEY, ACCESS_SECRET)
 api = tweepy.API(auth)
 
 
 # using username and password
-g = Github(keys.username, keys.password)
+g = Github(username, password)
 days_updated= []
 # Then play with your Github objects:
 for repo in g.get_user().get_repos():
