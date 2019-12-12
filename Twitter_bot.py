@@ -23,6 +23,8 @@ api = tweepy.API(auth)
 g = Github(username, password)
 days_updated= []
 # Then play with your Github objects:
-for repo in g.get_user().get_repos():
-    if d.date() == repo.updated_at.date():
-        api.update_status(f'yes he did, he updated: {repo.name}')
+while True:
+	for repo in g.get_user().get_repos():
+    	if d.date() == repo.updated_at.date():
+        	api.update_status(f'yes he did, he updated: {repo.name}')
+    time.sleep(INTERVAL)
