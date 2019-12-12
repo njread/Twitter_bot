@@ -3,6 +3,7 @@ from datetime import datetime
 import tweepy
 from tweepy import OAuthHandler
 from os import environ
+import time
 # First create a Github instance:
 d = datetime.today()
 
