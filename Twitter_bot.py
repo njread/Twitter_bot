@@ -2,13 +2,13 @@ from github import Github
 from datetime import datetime
 import tweepy
 from tweepy import OAuthHandler
-import keys
+
 # First create a Github instance:
 d = datetime.today()
-ckey = keys.ckey
-csecret = keys.csecret
-atoken = keys.atoken
-asecret = keys.asecret
+ckey = CONSUMER_KEY
+csecret = CONSUMER_SECRET
+atoken = ACCESS_KEY
+asecret = ACCESS_SECRET
 INTERVAL = 60 * 60 * 6
 
 auth = OAuthHandler(ckey, csecret)
