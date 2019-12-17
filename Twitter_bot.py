@@ -28,7 +28,7 @@ count = 0
 while True:
 	for repo in g.get_user().get_repos():
 		days_updated.append(repo.updated_at.date())
-	if d.date() in repo.updated_at.date():
+	if d.date() in days_updated:
 		api.update_status(f'yes he did, he updated: {repo.name}')
 		count +=1
 	else:
