@@ -20,10 +20,11 @@ auth.set_access_token(ACCESS_KEY, ACCESS_SECRET)
 api = tweepy.API(auth)
 # git hub username and password
 g = Github(username, password)
-days_updated= []
-count = 0
+
 # while loop that runs indefinitely that check if my dates.
 while True:
+	days_updated= []
+	count = 0
 	for repo in g.get_user().get_repos():
 		days_updated.append(repo.updated_at.date())
 	if d.date() in days_updated:
