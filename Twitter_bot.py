@@ -14,7 +14,7 @@ ACCESS_KEY = environ['ACCESS_KEY']
 ACCESS_SECRET = environ['ACCESS_SECRET']
 username = environ['username']
 password = environ['password']
-INTERVAL = 10
+INTERVAL = 60*60*24
 # twitter api authentication 
 auth = OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
 auth.set_access_token(ACCESS_KEY, ACCESS_SECRET)
