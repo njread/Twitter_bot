@@ -1,3 +1,4 @@
+from github import Github
 from datetime import datetime
 import tweepy
 from tweepy import OAuthHandler
@@ -25,7 +26,7 @@ g = Github(username, password)
 while True:
 	days_updated= []
 	count = 0
-	didnt_push = ["No he didnt he should feel bad!! ",
+	didnt_push = ['No he didnt he should feel bad!! ',
 				  'No he messed up and forgot!!',
 				  'Bro come on no pushes??',
 				  'He is trying his best but he got tied up so no pushes today'
