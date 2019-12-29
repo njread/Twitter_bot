@@ -38,15 +38,13 @@ while True:
 			api.update_status(f'yes he did, he updated: {repo.name} he is on a {count} day streak')
 			print('I tweeted that he pushed')	
 		else:
-			api.update_status(f'{didnt_push[randrange(3)]} he has broke a {count} day streak')
-			print('I tweeted that he did not push')
+			pass
+			print("no tweet")
 		time.sleep(INTERVAL)
-		count +=1
+	count +=1
 	except:
 		print('error duplicated tweet, deployed back up tweet.')
 		time.sleep(INTERVAL)
 		api.update_status(f'{didnt_push[randrange(3)]} he probably got on error on line {randrange(1000)} and got stuck')
 		count +=1
 		pass
-
-		
