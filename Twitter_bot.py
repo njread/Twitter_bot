@@ -36,12 +36,12 @@ while True:
 	try:
 		if d.date() in days_updated:
 			api.update_status(f'yes he did, he updated: {repo.name} he is on a {count} day streak')
-			print('I tweeted that he pushed')	
+			print('I tweeted that he pushed')
+			count += 1	
 		else:
 			pass
 			print("no tweet")
 		time.sleep(INTERVAL)
-	count +=1
 	except:
 		print('error duplicated tweet, deployed back up tweet.')
 		time.sleep(INTERVAL)
