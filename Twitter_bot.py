@@ -36,7 +36,7 @@ while True:
 		days_updated.append(repo.updated_at.date())
 	try:
 		if d.date() in days_updated:
-			api.update_status(f'yes he did, he updated: {repo.name} he is on a {count} day streak')
+			api.update_status(f'yes he did, he updated: {repo.name} ')
 			print('I tweeted that he pushed')
 			count += 1	
 		else:
