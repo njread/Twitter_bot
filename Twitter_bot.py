@@ -29,7 +29,8 @@ while True:
 	didnt_push = ['No he didnt he should feel bad!! ',
 				  'No he messed up and forgot!!',
 				  'Bro come on no pushes??',
-				  'He is trying his best but he got tied up so no pushes today'
+				  'He is trying his best but he got tied up so no pushes today',
+				  'No its not going well.'
 				  ]
 	for repo in g.get_user().get_repos():
 		days_updated.append(repo.updated_at.date())
